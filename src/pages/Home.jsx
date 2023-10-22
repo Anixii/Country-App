@@ -21,7 +21,7 @@ function Home({ countries, setCountries }) {
         data = data.filter(c => c.region.includes(region))
     } 
     if(search){ 
-        data = data.filter(c => c.name.common.toLowerCase().includes(search.toLowerCase()))
+        data = data.filter(c => c.name.toLowerCase().includes(search.toLowerCase()))
     }
     setFilteredCountry(data)
   }
